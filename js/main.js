@@ -1,14 +1,8 @@
 // Write your DOM code here!
-const redBtn = document.querySelector('.red');
-const whiteBtn = document.querySelector('.white');
-const blueBtn = document.querySelector('.blue');
-const yellowBtn = document.querySelector('.yellow');
+const ulEl = document.querySelector('ul');
 const bodyEl = document.querySelector('body');
 
-redBtn.addEventListener('click', changeBg);
-whiteBtn.addEventListener('click', changeBg);
-blueBtn.addEventListener('click', changeBg);
-yellowBtn.addEventListener('click', changeBg);
+ulEl.addEventListener('click', changeBg);
 
 function changeBg(e) {
     if (e.target.classList.value === "red") {
